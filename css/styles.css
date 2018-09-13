@@ -1,18 +1,25 @@
 @charset "utf-8";
 /* CSS Document */
 
-body,td,th,p{
+body,
+td,
+th,
+p {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
 	color: #333;
-	line-height: 1.5;  /* remove this?*/
+	line-height: 1.5;
+}
+.pageHeader {
+	padding-top: 25px;
 }
 body {
 	background-color: #fdfdfd;
 	margin: 0;
 	position:relative;
 }
-ul, li {
+ul,
+li {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
 	color: #333;
