@@ -35,11 +35,27 @@ a:hover, a:focus {
 a img{
 	border: none 0px #fff;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 20px;
 }
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
 #maincontent {
@@ -283,4 +299,40 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+@media screen and (min-width: 200px) {
+	#restaurants-list li {
+		width: 100%;
+	}
+	.filter-options {
+		height: 150px;
+	}
+}
+@media screen and (min-width: 462px) {
+	.filter-options {
+		height: 100px;
+	}
+}
+
+@media screen and (min-width: 831px) {
+	#restaurants-list li {
+		width: 38%;
+	}
+}
+@media screen and (min-width: 1139px) {
+	#restaurants-list {
+		padding-left: 0;
+		padding-right: 0;
+
+	}
+	main,
+	header {
+		max-width: 1125px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#restaurants-list li {
+		width: 270px;
+	}
 }
