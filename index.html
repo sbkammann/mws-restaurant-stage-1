@@ -20,11 +20,12 @@
 
   <main id="maincontent">
     <a class="skipMap" href="#filter">Skip map</a>
-    <section id="map-container">
+    <map id="map-container">
+      <label class="mapLabel"   for="map">Map of New York City area</label>
       <div id="map"></div>
-    </section>
+    </map>
     <section>
-      <div class="filter-options"> <!-- class -->
+      <div class="filter-options">
         <h2 tabindex="0" class="filterResults">Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
@@ -44,7 +45,7 @@
 
 
   <footer id="footer">
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    Copyright (c) 2018 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 
 </body>
