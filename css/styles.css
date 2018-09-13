@@ -342,3 +342,15 @@ nav h1 a {
 	top: -999;
 	bottom: -999;
 }
+
+button {
+	background-color: orange;
+	border: none;
+	align-items: center;
+	width: 80%;
+	height: 40px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
