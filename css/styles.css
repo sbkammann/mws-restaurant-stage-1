@@ -336,3 +336,8 @@ nav h1 a {
 		width: 270px;
 	}
 }
+.skipMap {
+	position: absolute;
+	top: -999;
+	bottom: -999;
+}

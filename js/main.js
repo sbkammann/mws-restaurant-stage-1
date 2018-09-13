@@ -208,3 +208,16 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
+
+//skip link
+const skipMap = document.querySelector('.skipMap');
+const filter = document.querySelector('.filterResults');
+
+skipMap.addEventListener('click', () => {
+  filter.focus();
+});
+skipMap.addEventListener('keyup', (event) => {
+  if(event.keyCode === 13) {
+    filter.focus();
+  }
+});
