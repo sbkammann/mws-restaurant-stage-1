@@ -364,7 +364,9 @@ nav h1 a {
 	top: -999;
 	bottom: -999;
 }
-
+.hoursLabel {
+	color: #f3f3f3;
+}
 button {
 	background-color: orange;
 	border: none;
