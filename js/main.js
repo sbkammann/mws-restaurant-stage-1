@@ -225,3 +225,9 @@ skipMap.addEventListener('keyup', (event) => {
     filter.focus();
   }
 });
+
+navigator.serviceWorker.register('/js/sw/index.js').then(function() {
+  console.log('Service Worker registration was successful.');
+}).catch(function(err) {
+  console.log('Service Worker registration failed.', err);
+});
