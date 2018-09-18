@@ -33,6 +33,6 @@ If you have Python 2.x type:
 
 ## Leaflet.js and Mapbox:
 
-<strong>Due to terms and condition etc. concerns I have removed my API keys. You will need to follow these instructions to get your own and paste them where you see '<your MAPBOX API KEY HERE>' in main.js and restaurant_info.js</strong>
+<strong>Due to terms and condition etc. concerns I have removed my API keys. You will need to follow these instructions to get your own and paste them where you see `<your MAPBOX API KEY HERE>` in main.js and restaurant_info.js</strong>
 
 This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information.
