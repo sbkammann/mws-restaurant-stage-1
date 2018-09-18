@@ -78,7 +78,7 @@ initMap = () => {
         scrollWheelZoom: false
       });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
-    mapboxToken: 'pk.eyJ1Ijoia2FtbWFubmNoZTEiLCJhIjoiY2psenNqeWp4MTA3YTN1bXRoZGVpdWU2bSJ9.l1KsrVEOP70C3jJOMfkR0A',
+    mapboxToken: '<your MAPBOX API KEY HERE>',
     maxZoom: 18,
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
       '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -178,7 +178,7 @@ createRestaurantHTML = (restaurant) => {
   address.setAttribute('tabindex', '0');
   li.append(address);
 
-  const more = document.createElement('button'); //button //a
+  const more = document.createElement('button');
   more.innerHTML = 'View Details';
   more.type = 'button';
   more.setAttribute( 'onclick', `location.href = '${DBHelper.urlForRestaurant(restaurant)}'`);
@@ -218,16 +218,16 @@ const skipMap = document.querySelector('.skipMap');
 const filter = document.querySelector('.filterResults');
 
 skipMap.addEventListener('click', () => {
-  filter.focus();
+	filter.focus();
 });
 skipMap.addEventListener('keyup', (event) => {
-  if(event.keyCode === 13) {
-    filter.focus();
-  }
+	if(event.keyCode === 13) {
+		filter.focus();
+	}
 });
 
 navigator.serviceWorker.register('/js/sw/index.js').then(function() {
-  console.log('Service Worker registration was successful.');
+	console.log('Service Worker registration was successful.');
 }).catch(function(err) {
-  console.log('Service Worker registration failed.', err);
+	console.log('Service Worker registration failed.', err);
 });

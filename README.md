@@ -1,34 +1,38 @@
-# Mobile Web Specialist Certification Course
----
-#### _Three Stage Course Material Project - Restaurant Reviews_
 
-## Project Overview: Stage 1
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+## Restaurant Reviews App
+
+A static webpage was converted to a mobile-ready web app. Accessibility was also a focus of this project in addition to responsive design. A service worker was implemented for offline use.
 
 ### Specification
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality.
+Udacity provided starter code that purposely lacked responsive and accessibility elements. It was the students job to enhance usability as well as implement these features.
 
-### What do I do from here?
+### Getting started.
 
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer.
+After forking the repo and cloning the project.
 
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+1.  Start up a simple python HTTP server in the project folder to serve up the site files on your local computer.
 
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
+Use the `python -V` in a terminal to determine what version of python you have.
+
+If you have Python 2.x type:
+`python -m SimpleHTTPServer 8000`
+
+ If you have Python 3.x type: `python3 -m http.server 8000`.
+ This did not work for me, by the way.
+ You can type `python -m http.server 8000` instead if you also have trouble.
+
+ Note also that you can use a port other than 8000 if it is already in use.
+
+ Navigate to [website](https://www.python.org/) if you don't have Python to download and install the software.
+
+2. Once you got the server running, visit the site: `http://localhost:8000`.
+
+*Pro tip: When running a server in the terminal you can open another terminal window so you can still commit changes. Also changes might not take so you will have to open up dev tools, go to the network panel right click on one of the items and clear the browser cache. Then refresh the page.*
 
 ## Leaflet.js and Mapbox:
 
+<strong>Due to terms and condition etc. concerns I have removed my API keys. You will need to follow these instructions to get your own and paste them where you see <your MAPBOX API KEY HERE> in main.js and restaurant_info.js</strong>
+
 This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information.
-
-### Note about ES6
-
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write.
-
-
-### if for some reason the python server doesn't work fret not
-use webserver for chrome
-You need to change a line in the js file though to allow it to fetch the data. 
