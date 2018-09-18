@@ -228,7 +228,7 @@ skipMap.addEventListener('keyup', (event) => {
 	}
 });
 
-navigator.serviceWorker.register('/js/sw/index.js').then(function() {
+navigator.serviceWorker.register('/index.js').then(function() {  //'/js/sw/index.js'
 	console.log('Service Worker registration was successful.');
 }).catch(function(err) {
 	console.log('Service Worker registration failed.', err);
